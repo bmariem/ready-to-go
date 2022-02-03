@@ -1,20 +1,20 @@
 import React from "react";
 
-const Switch = (props) => {
+const Switch = ({ switchOn, setSwitch }) => {
   return (
     <div className="switch">
       <button
-        className={props.switchOn ? "clicked" : null}
+        className={switchOn ? "clicked" : null}
         onClick={() => {
-          props.setSwitch(true);
+          setSwitch(true);
         }}
       >
         On
       </button>
       <button
-        className={!props.switchOn ? "clicked" : null}
+        className={!switchOn ? "clicked" : null}
         onClick={() => {
-          props.setSwitch(false);
+          setSwitch(false);
         }}
       >
         OFF
