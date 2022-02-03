@@ -23,7 +23,8 @@ function App() {
           <Switch setSwitch={setSwitch2} switchOn={switch2} />
           <Switch setSwitch={setSwitch3} switchOn={switch3} />
         </div>
-        <Message go={switch1 && switch2 && switch3} /> <Footer />
+        <Message switch1={switch1} switch2={switch2} switch3={switch3} />{" "}
+        <Footer />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Message = (props) => {
+const Message = ({ switch1, switch2, switch3 }) => {
   return (
     <div className="message">
-      {props.go ? (
+      {switch1 && switch2 && switch3 ? (
         <p className="go"> GO !</p>
       ) : (
         <p className="no-way"> NO WAY !</p>
